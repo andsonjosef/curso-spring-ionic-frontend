@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { NavController, IonicPage, MenuController } from 'ionic-angular';
-import { CategoriesPage } from '../categories/categories';
 
 @IonicPage()
 @Component({
