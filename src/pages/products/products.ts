@@ -24,19 +24,10 @@ export class ProductsPage {
     .subscribe(response =>{
       this.items = response['content'];
     }, error => {});
-
-    this.items = [
-      {
-        id: "1",
-        name: 'Mouse',
-        price: 80.99
-      },
-      {
-        id: "2",
-        name: 'Keyboard',
-        price: 100.00
-      }
-    ]
   };
+
+  showDetail(){
+    this.navCtrl.push('ProductDetailPage');
+  }
 
 }
