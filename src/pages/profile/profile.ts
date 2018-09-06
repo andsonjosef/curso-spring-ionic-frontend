@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { StorageService } from '../../services/storage.service';
-import { ClientDTO } from '../../models/Cliente.dto';
+import { ClientDTO } from '../../models/cliente.dto';
 import { ClientService } from '../../services/domain/cliente.service';
 
 /**

@@ -1,0 +1,22 @@
+s and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>PickAddress</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+    <ion-list>
+        <ion-list-header>
+          Pick an address
+        </ion-list-header>
+        <button ion-item *ngFor="let item of items">
+            <h2>{{item.street}}, {{item.number}}</h2>
+            <p>{{item.complement}} {{item.district}} zipCode {{item.zipCode}}</p>
+            <p>{{item.city.name}}, {{item.city.state.name}}</p>
+        </button>
+      </ion-list>
+</ion-content>
