@@ -1,11 +1,11 @@
 import { CityDTO } from "./city.dto";
 
 export interface AddressDTO{
-    id: String;
-    street: String;
-	number: String;
-	complement: String;
-	district: String;
-    zipCode: String;
+    id: string;
+    street: string;
+	number: string;
+	complement: string;
+	district: string;
+    zipCode: string;
     city: CityDTO;
 }
