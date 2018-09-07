@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { CarItem } from '../../models/cart-item';
+import { CartItem } from '../../models/cart-item';
 import { CartService } from '../../services/domain/cart.service';
 import { ProductDTO } from '../../models/Product.dto';
 
@@ -13,7 +13,7 @@ import { ProductDTO } from '../../models/Product.dto';
 })
 export class CartPage {
 
-  items: CarItem[];
+  items: CartItem[];
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
