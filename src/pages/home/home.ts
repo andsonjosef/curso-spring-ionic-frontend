@@ -36,7 +36,7 @@ export class HomePage {
         this.auth.sucessfullLogin(response.headers.get("Authorization"));
         this.navCtrl.setRoot("CategoriesPage");
     },
-    error=>{})
+    _error => {});  
   }
 
   login(){
@@ -45,7 +45,7 @@ export class HomePage {
         this.auth.sucessfullLogin(response.headers.get("Authorization"));
         this.navCtrl.setRoot("CategoriesPage");
     },
-    error=>{})
+    _error=>{})
   }
 
   signup() {

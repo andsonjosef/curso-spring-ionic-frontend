@@ -2,7 +2,7 @@ import { Injectable } from "@angular/core";
 import { HttpInterceptor, HttpRequest, HttpHandler, HttpEvent, HTTP_INTERCEPTORS } from "@angular/common/http";
 import { Observable } from "rxjs/Rx";
 import { StorageService } from "../services/storage.service";
-import { AlertController, Backdrop } from "ionic-angular";
+import { AlertController } from "ionic-angular";
 import { FieldMessage } from "../services/domain/fieldmessage";
 
 
@@ -15,7 +15,7 @@ export class ErrorInterceptor implements HttpInterceptor {
 
     intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
         return next.handle(req)
-        .catch((error, caugth) => {
+        .catch((error) => {
             let errorObj = error;
             if(errorObj.error){
                 errorObj = errorObj.error;

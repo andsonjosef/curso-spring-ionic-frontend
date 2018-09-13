@@ -10,7 +10,7 @@ export class ProductService{
 
     }
 
-    findById(product_id : ByteString) {
+    findById(product_id : String) {
         return this.http.get<ProductDTO>(`${API_CONFIG.baseUrl}/products/${product_id}`);
       }
 
